@@ -291,14 +291,14 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Ori
     @Override
     public void start() {
         FLog.i(ReactConstants.TAG, "orientation detect enabled.");
-        mOrientationListener.enable();
+//        mOrientationListener.enable();
         ctx.registerReceiver(mReceiver, new IntentFilter("onConfigurationChanged"));
     }
 
     @Override
     public void stop() {
         FLog.d(ReactConstants.TAG, "orientation detect disabled.");
-        mOrientationListener.disable();
+//        mOrientationListener.disable();
         try {
             ctx.unregisterReceiver(mReceiver);
         } catch (java.lang.IllegalArgumentException e) {
@@ -309,7 +309,7 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Ori
     @Override
     public void release() {
         FLog.d(ReactConstants.TAG, "orientation detect disabled.");
-        mOrientationListener.disable();
+//        mOrientationListener.disable();
 
         final Activity activity = getCurrentActivity();
         if (activity == null) return;
