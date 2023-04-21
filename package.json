@@ -1,14 +1,14 @@
 {
-    "name": "react-native-orientation-locker",
-    "version": "1.5.0",
+    "name": "@mogody/react-native-orientation-locker",
+    "version": "1.5.1",
     "summary": "A react-native module that can listen on orientation changing of device",
     "description": "A react-native module that can listen on orientation changing of device, get current orientation, lock to preferred orientation.",
-    "homepage": "https://github.com/wonday/react-native-orientation-locker",
+    "homepage": "https://github.com/mogody/react-native-orientation-locker",
     "main": "index.js",
     "types": "index.d.ts",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/wonday/react-native-orientation-locker.git"
+        "url": "git+https://github.com/mogody/react-native-orientation-locker.git"
     },
     "keywords": [
         "orientation",
@@ -19,12 +19,12 @@
         "screen"
     ],
     "author": {
-        "name": "Wonday",
-        "url": "https://github.com/wonday"
+        "name": "Mogody",
+        "url": "https://github.com/mogody"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/wonday/react-native-orientation-locker/issues"
+        "url": "https://github.com/mogody/react-native-orientation-locker/issues"
     },
     "dependencies": {
     },
