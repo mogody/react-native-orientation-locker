@@ -21,7 +21,7 @@ import android.view.Display;
 import android.view.OrientationEventListener;
 import android.view.Surface;
 import android.view.WindowManager;
-
+import androidx.core.content.ContextCompat;
 import com.facebook.common.logging.FLog;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Callback;
@@ -292,7 +292,8 @@ public class OrientationModule extends ReactContextBaseJavaModule implements Ori
     public void start() {
         FLog.i(ReactConstants.TAG, "orientation detect enabled.");
 //        mOrientationListener.enable();
-        ctx.registerReceiver(mReceiver, new IntentFilter("onConfigurationChanged"));
+        // ctx.registerReceiver(mReceiver, new IntentFilter("onConfigurationChanged"));
+        ContextCompat.registerReceiver(ctx, mReceiver, new IntentFilter("onConfigurationChanged"), ContextCompat.RECEIVER_NOT_EXPORTED);
     }
 
     @Override
